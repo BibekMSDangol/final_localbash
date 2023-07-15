@@ -128,17 +128,17 @@ if(isset($_POST['delete'])){
          <p><i class="fas fa-calendar"></i><span><?= $fetch_property['date']; ?></span></p>
       </div>
       
-      <h3 class="title">description</h3>
+      <h3 class="title">Description</h3>
       <p class="description"><?= $fetch_property['description']; ?></p>
       <form action="" method="post" class="flex-btn">
          <input type="hidden" name="delete_id" value="<?= $property_id; ?>">
-         <input type="submit" value="delete property" name="delete" class="delete-btn" onclick="return confirm('delete this listing?');">
+         <input type="submit" value="Delete venue" name="delete" class="delete-btn" onclick="return confirm('Delete this venue?');">
       </form>
    </div>
    <?php
       }
    }else{
-      echo '<p class="empty">property not found! <a href="events.php" style="margin-top:1.5rem;" class="option-btn">go to listings</a></p>';
+      echo '<p class="empty">Venue not found! <a href="events.php" style="margin-top:1.5rem;" class="option-btn">go to events</a></p>';
    }
    ?>
 

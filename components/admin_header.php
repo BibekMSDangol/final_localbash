@@ -17,7 +17,7 @@
       <a href="login.php" class="option-btn">Login</a>
       <a href="register.php" class="option-btn">Register</a>
    </div>
-   <a href="../components/admin_logout.php" onclick="return confirm('logout from this website?');" class="delete-btn"><i class="fas fa-right-from-bracket"></i><span>logout</span></a>
+   <a href="../components/admin_logout.php" onclick="return confirm('Logout from this website?');" class="delete-btn"><i class="fas fa-right-from-bracket"></i><span>logout</span></a>
 
 </header>
 

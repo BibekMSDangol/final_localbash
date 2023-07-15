@@ -87,7 +87,7 @@ if(isset($_POST['delete'])){
       <p>name : <span><?= $fetch_admins['name']; ?></p>
       <form action="" method="POST">
          <input type="hidden" name="delete_id" value="<?= $fetch_admins['id']; ?>">
-         <input type="submit" value="delete admin" onclick="return confirm('delete this admin?');" name="delete" class="delete-btn">
+         <input type="submit" value="delete admin" onclick="return confirm('Delete this admin?');" name="delete" class="delete-btn">
       </form>
    </div>
    <?php } ?>

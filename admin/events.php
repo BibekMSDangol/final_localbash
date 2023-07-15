@@ -137,7 +137,7 @@ x
       <form action="" method="POST">
          <input type="hidden" name="delete_id" value="<?= $listing_id; ?>">
          <a href="view_venue.php?get_id=<?= $listing_id; ?>" class="btn">View venue</a>
-         <input type="submit" value="delete listing" onclick="return confirm('delete this listing?');" name="delete" class="delete-btn">
+         <input type="submit" value="delete listing" onclick="return confirm('Delete this venue?');" name="delete" class="delete-btn">
       </form>
    </div>
    <?php
@@ -145,7 +145,7 @@ x
       }elseif(isset($_POST['search_box']) OR isset($_POST['search_btn'])){
          echo '<p class="empty">no results found!</p>';
       }else{
-         echo '<p class="empty">no property posted yet!</p>';
+         echo '<p class="empty">no venue posted yet!</p>';
       }
    ?>
 

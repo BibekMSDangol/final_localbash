@@ -24,36 +24,36 @@ if(isset($_POST['update'])){
    $property_name = filter_var($property_name, FILTER_SANITIZE_STRING);
    $price = $_POST['price'];
    $price = filter_var($price, FILTER_SANITIZE_STRING);
-   $deposite = $_POST['deposite'];
-   $deposite = filter_var($deposite, FILTER_SANITIZE_STRING);
+   // $deposite = $_POST['deposite'];
+   // $deposite = filter_var($deposite, FILTER_SANITIZE_STRING);
    $address = $_POST['address'];
    $address = filter_var($address, FILTER_SANITIZE_STRING);
-   $offer = $_POST['offer'];
-   $offer = filter_var($offer, FILTER_SANITIZE_STRING);
-   $type = $_POST['type'];
-   $type = filter_var($type, FILTER_SANITIZE_STRING);
-   $status = $_POST['status'];
-   $status = filter_var($status, FILTER_SANITIZE_STRING);
-   $furnished = $_POST['furnished'];
-   $furnished = filter_var($furnished, FILTER_SANITIZE_STRING);
-   $bhk = $_POST['bhk'];
-   $bhk = filter_var($bhk, FILTER_SANITIZE_STRING);
-   $bedroom = $_POST['bedroom'];
-   $bedroom = filter_var($bedroom, FILTER_SANITIZE_STRING);
-   $bathroom = $_POST['bathroom'];
-   $bathroom = filter_var($bathroom, FILTER_SANITIZE_STRING);
-   $balcony = $_POST['balcony'];
-   $balcony = filter_var($balcony, FILTER_SANITIZE_STRING);
-   $carpet = $_POST['carpet'];
-   $carpet = filter_var($carpet, FILTER_SANITIZE_STRING); 
-   $age = $_POST['age'];
-   $age = filter_var($age, FILTER_SANITIZE_STRING);
-   $total_floors = $_POST['total_floors'];
-   $total_floors = filter_var($total_floors, FILTER_SANITIZE_STRING);
-   $room_floor = $_POST['room_floor'];
-   $room_floor = filter_var($room_floor, FILTER_SANITIZE_STRING);
-   $loan = $_POST['loan'];
-   $loan = filter_var($loan, FILTER_SANITIZE_STRING);
+   // $offer = $_POST['offer'];
+   // $offer = filter_var($offer, FILTER_SANITIZE_STRING);
+   // $type = $_POST['type'];
+   // $type = filter_var($type, FILTER_SANITIZE_STRING);
+   // $status = $_POST['status'];
+   // $status = filter_var($status, FILTER_SANITIZE_STRING);
+   // $furnished = $_POST['furnished'];
+   // $furnished = filter_var($furnished, FILTER_SANITIZE_STRING);
+   // $bhk = $_POST['bhk'];
+   // $bhk = filter_var($bhk, FILTER_SANITIZE_STRING);
+   // $bedroom = $_POST['bedroom'];
+   // $bedroom = filter_var($bedroom, FILTER_SANITIZE_STRING);
+   // $bathroom = $_POST['bathroom'];
+   // $bathroom = filter_var($bathroom, FILTER_SANITIZE_STRING);
+   // $balcony = $_POST['balcony'];
+   // $balcony = filter_var($balcony, FILTER_SANITIZE_STRING);
+   // $carpet = $_POST['carpet'];
+   // $carpet = filter_var($carpet, FILTER_SANITIZE_STRING); 
+   // $age = $_POST['age'];
+   // $age = filter_var($age, FILTER_SANITIZE_STRING);
+   // $total_floors = $_POST['total_floors'];
+   // $total_floors = filter_var($total_floors, FILTER_SANITIZE_STRING);
+   // $room_floor = $_POST['room_floor'];
+   // $room_floor = filter_var($room_floor, FILTER_SANITIZE_STRING);
+   // $loan = $_POST['loan'];
+   // $loan = filter_var($loan, FILTER_SANITIZE_STRING);
    $description = $_POST['description'];
    $description = filter_var($description, FILTER_SANITIZE_STRING);
 
@@ -245,10 +245,10 @@ if(isset($_POST['update'])){
       }
    }
 
-   $update_listing = $conn->prepare("UPDATE `property` SET property_name = ?, address = ?, price = ?, type = ?, offer = ?, status = ?, furnished = ?, bhk = ?, deposite = ?, bedroom = ?, bathroom = ?, carpet = ?, age = ?, total_floors = ?, room_floor = ?, loan = ?, lift = ?, security_guard = ?, play_ground = ?, garden = ?, water_supply = ?, power_backup = ?, parking_area = ?, gym = ?, shopping_mall = ?, hospital = ?, school = ?, market_area = ?, description = ? WHERE id = ?");   
-   $update_listing->execute([$property_name, $address, $price, $type, $offer, $status, $furnished, $bhk, $deposite, $bedroom, $bathroom, $carpet, $age, $total_floors, $room_floor, $loan, $lift, $security_guard, $play_ground, $garden, $water_supply, $power_backup, $parking_area, $gym, $shopping_mall, $hospital, $school, $market_area, $description, $update_id]);
+   $update_listing = $conn->prepare("UPDATE `property` SET property_name = ?, address = ?, price = ?, description = ? WHERE id = ?");   
+   $update_listing->execute([$property_name, $address, $price,$description, $update_id]);
 
-   $success_msg[] = 'listing updated successfully!';
+   $success_msg[] = 'Venue updated successfully!';
 
 }
 
@@ -401,12 +401,12 @@ if(isset($_POST['delete_image_05'])){
             <input type="file" name="image_05" class="input" accept="image/*">
          </div>   
       </div>
-      <input type="submit" value="update property" class="btn" name="update">
+      <input type="submit" value="Update venue" class="btn" name="update">
    </form>
    <?php
       }
    }else{
-      echo '<p class="empty">property not found! <a href="post_venue.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+      echo '<p class="empty">Venue not found! <a href="post_venue.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
    }
    ?>
 

@@ -75,7 +75,7 @@ if(isset($_POST['delete'])){
       <p>enquiry for : <span><?= $fetch_property['property_name']; ?></span></p>
       <form action="" method="POST">
          <input type="hidden" name="request_id" value="<?= $fetch_request['id']; ?>">
-         <input type="submit" value="delete request" class="btn" onclick="return confirm('remove this request?');" name="delete">
+         <input type="submit" value="Delete request" class="btn" onclick="return confirm('Remove this request?');" name="delete">
          <a href="view_venue.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view venue</a>
       </form>
    </div>

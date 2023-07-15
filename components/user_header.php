@@ -54,7 +54,7 @@
                   <li><a href="register.php">Register</a></li>
                   <?php if($user_id != ''){ ?>
                   <li><a href="update.php">Update profile</a></li>
-                  <li><a href="components/user_logout.php" onclick="return confirm('logout from this website?');">logout</a>
+                  <li><a href="components/user_logout.php" onclick="return confirm('Logout from this website?');">logout</a>
                   <?php } ?></li>
                </ul>
             </li>

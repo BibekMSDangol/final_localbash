@@ -124,7 +124,7 @@ if(isset($_POST['delete'])){
       <p class="location"><i class="fas fa-map-marker-alt"></i><span><?= $fetch_property['address']; ?></span></p>
       <div class="flex-btn">
          <a href="update_venue.php?get_id=<?= $property_id; ?>" class="btn">Update</a>
-         <input type="submit" name="delete" value="delete" class="btn" onclick="return confirm('delete this listing?');">
+         <input type="submit" name="delete" value="delete" class="btn" onclick="return confirm('Delete this venu?');">
       </div>
       <a href="view_venue.php?get_id=<?= $property_id; ?>" class="btn">View Post</a>
    </form>
