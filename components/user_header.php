@@ -11,7 +11,7 @@
          </div>
 
          <ul>
-            <li><a href="post_property.php">Post a venue<i class="fa-solid fa-paper-plane"></i></a></li>
+            <li><a href="post_venue.php">Post a venue<i class="fa-solid fa-paper-plane"></i></a></li>
          </ul>
       </section>
    </nav>
@@ -26,11 +26,11 @@
                <li><a href="#">My listings<i class="fas fa-angle-down"></i></a>
                   <ul>
                      <li><a href="dashboard.php">Dashboard</a></li>
-                     <li><a href="post_property.php">Post venue</a></li>
+                     <li><a href="post_venue.php">Post venue</a></li>
                      <li><a href="my_listings.php">My posts</a></li>
                   </ul>
                </li>
-               <li><a href="listings.php">Venues</a>
+               <li><a href="events.php">Events</a>
                   <!-- <ul>
                      <li><a href="search.php">Filter search</a></li>
                      <li><a href="listings.php">All venues</a></li>
@@ -39,8 +39,8 @@
                <li><a href="#">Help<i class="fas fa-angle-down"></i></a>
                   <ul>
                      <li><a href="about.php">About us</a></i></li>
-                     <li><a href="contact.php">Feedback</a></i></li>
-                     <li><a href="contact.php#faq">FAQ</a></i></li>
+                     <li><a href="feedback.php">Feedback</a></i></li>
+                     <li><a href="feedback.php#faq">FAQ</a></i></li>
                   </ul>
                </li>
             </ul>

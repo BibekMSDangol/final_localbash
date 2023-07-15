@@ -57,7 +57,7 @@ if(isset($_POST['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Listings</title>
+   <title>Venues</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -73,11 +73,11 @@ if(isset($_POST['delete'])){
 <!-- header section ends -->
 
 <section class="listings">
-
-   <h1 class="heading">all listings</h1>
+x
+   <h1 class="heading">All venues</h1>
 
    <form action="" method="POST" class="search-form">
-      <input type="text" name="search_box" placeholder="search listings..." maxlength="100" required>
+      <input type="text" name="search_box" placeholder="Search for venues..." maxlength="100" required>
       <button type="submit" class="fas fa-search" name="search_btn"></button>
    </form>
 
@@ -136,7 +136,7 @@ if(isset($_POST['delete'])){
       <p class="location"><i class="fas fa-map-marker-alt"></i><?= $fetch_listing['address']; ?></p>
       <form action="" method="POST">
          <input type="hidden" name="delete_id" value="<?= $listing_id; ?>">
-         <a href="view_property.php?get_id=<?= $listing_id; ?>" class="btn">view property</a>
+         <a href="view_venue.php?get_id=<?= $listing_id; ?>" class="btn">View venue</a>
          <input type="submit" value="delete listing" onclick="return confirm('delete this listing?');" name="delete" class="delete-btn">
       </form>
    </div>

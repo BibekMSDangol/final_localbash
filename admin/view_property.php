@@ -138,7 +138,7 @@ if(isset($_POST['delete'])){
    <?php
       }
    }else{
-      echo '<p class="empty">property not found! <a href="listings.php" style="margin-top:1.5rem;" class="option-btn">go to listings</a></p>';
+      echo '<p class="empty">property not found! <a href="events.php" style="margin-top:1.5rem;" class="option-btn">go to listings</a></p>';
    }
    ?>
 

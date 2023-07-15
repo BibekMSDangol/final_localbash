@@ -94,11 +94,11 @@ include 'components/save_send.php';
             <?php
                if($select_saved->rowCount() > 0){
             ?>
-            <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>saved</span></button>
+            <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>Added to favorites</span></button>
             <?php
                }else{ 
             ?>
-            <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>save</span></button>
+            <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>Favorite</span></button>
             <?php
                }
             ?>
@@ -122,7 +122,7 @@ include 'components/save_send.php';
             <p><i class="fa-solid fa-circle-info" style="color: #e64141;"></i><span><?= $fetch_property['description']; ?></span></p>
             </div>
             <div class="flex-btn">
-               <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+               <a href="view_venue.php?get_id=<?= $fetch_property['id']; ?>" class="btn">View venue</a>
                <input type="submit" value="send enquiry" name="send" class="btn">
             </div>
          </div>
@@ -130,14 +130,14 @@ include 'components/save_send.php';
       <?php
          }
       }else{
-         echo '<p class="empty">no properties added yet! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+         echo '<p class="empty">no properties added yet! <a href="post_venue.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
       }
       ?>
       
    </div>
 
    <div style="margin-top: 2rem; text-align:center;">
-      <a href="listings.php" class="inline-btn">view all</a>
+      <a href="events.php" class="inline-btn">View all</a>
    </div>
 
 </section>

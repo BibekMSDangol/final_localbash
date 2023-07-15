@@ -82,10 +82,10 @@ if(isset($_POST['delete'])){
 
 <section class="grid">
 
-   <h1 class="heading">users</h1>
+   <h1 class="heading">Users</h1>
 
    <form action="" method="POST" class="search-form">
-      <input type="text" name="search_box" placeholder="search users..." maxlength="100" required>
+      <input type="text" name="search_box" placeholder="Search users..." maxlength="100" required>
       <button type="submit" class="fas fa-search" name="search_btn"></button>
    </form>
 
@@ -109,10 +109,10 @@ if(isset($_POST['delete'])){
             $total_properties = $count_property->rowCount();
    ?>
    <div class="box">
-      <p>name : <span><?= $fetch_users['name']; ?></span></p>
-      <p>number : <a href="tel:<?= $fetch_users['number']; ?>"><?= $fetch_users['number']; ?></a></p>
-      <p>email : <a href="mailto:<?= $fetch_users['email']; ?>"><?= $fetch_users['email']; ?></a></p>
-      <p>properties listed : <span><?= $total_properties; ?></span></p>
+      <p>Name : <span><?= $fetch_users['name']; ?></span></p>
+      <p>Number : <a href="tel:<?= $fetch_users['number']; ?>"><?= $fetch_users['number']; ?></a></p>
+      <p>Email : <a href="mailto:<?= $fetch_users['email']; ?>"><?= $fetch_users['email']; ?></a></p>
+      <p>Venues posted : <span><?= $total_properties; ?></span></p>
       <form action="" method="POST">
          <input type="hidden" name="delete_id" value="<?= $fetch_users['id']; ?>">
          <input type="submit" value="delete user" onclick="return confirm('delete this user?');" name="delete" class="delete-btn">

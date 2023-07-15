@@ -61,7 +61,7 @@ if(isset($_POST['delete'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>my listings</title>
+   <title>Posts</title>
 
    <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -76,7 +76,7 @@ if(isset($_POST['delete'])){
 
 <section class="my-listings">
 
-   <h1 class="heading">my listings</h1>
+   <h1 class="heading">My posts</h1>
 
    <div class="box-container">
 
@@ -123,15 +123,15 @@ if(isset($_POST['delete'])){
       <h3 class="name"><?= $fetch_property['property_name']; ?></h3>
       <p class="location"><i class="fas fa-map-marker-alt"></i><span><?= $fetch_property['address']; ?></span></p>
       <div class="flex-btn">
-         <a href="update_property.php?get_id=<?= $property_id; ?>" class="btn">update</a>
+         <a href="update_venue.php?get_id=<?= $property_id; ?>" class="btn">Update</a>
          <input type="submit" name="delete" value="delete" class="btn" onclick="return confirm('delete this listing?');">
       </div>
-      <a href="view_property.php?get_id=<?= $property_id; ?>" class="btn">view property</a>
+      <a href="view_venue.php?get_id=<?= $property_id; ?>" class="btn">View Post</a>
    </form>
    <?php
          }
       }else{
-         echo '<p class="empty">No venues added yet! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+         echo '<p class="empty">No venues added yet! <a href="post_venue.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
       }
       ?>
 

@@ -165,7 +165,7 @@ if(isset($_POST['h_search'])){
                <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
             </div>
             <div class="flex-btn">
-               <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+               <a href="view_venue.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view venue</a>
                <input type="submit" value="send enquiry" name="send" class="btn">
             </div>
          </div>

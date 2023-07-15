@@ -113,7 +113,7 @@ include 'components/save_send.php';
                <p><i class="fa-solid fa-circle-info" style="color: #e64141;"></i><span><?= $fetch_property['description']; ?></span></p>
             </div>
             <div class="flex-btn">
-               <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+               <a href="view_venue.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view venue</a>
                <input type="submit" value="send enquiry" name="send" class="btn">
             </div>
          </div>
@@ -121,11 +121,11 @@ include 'components/save_send.php';
       <?php
                }
             }else{
-               echo '<p class="empty">No venues added yet! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+               echo '<p class="empty">No venues added yet! <a href="post_venue.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
             }
          }
       }else{
-         echo '<p class="empty">No venues saved yet! <a href="listings.php" style="margin-top:1.5rem;" class="btn">Explore</a></p>';
+         echo '<p class="empty">No venues saved yet! <a href="events.php" style="margin-top:1.5rem;" class="btn">Explore</a></p>';
       }
       ?>
       

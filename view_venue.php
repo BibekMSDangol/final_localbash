@@ -24,7 +24,7 @@ include 'components/save_send.php';
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>View Property</title>
+   <title>View Venue</title>
 
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -39,7 +39,6 @@ include 'components/save_send.php';
    
 <?php include 'components/user_header.php'; ?>
 
-<!-- view property section starts  -->
 
 <section class="view-property">
 
@@ -108,13 +107,13 @@ include 'components/save_send.php';
    <?php
       }
    }else{
-      echo '<p class="empty">property not found! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+      echo '<p class="empty">property not found! <a href="post_venue.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
    }
    ?>
 
 </section>
 
-<!-- view property section ends -->
+
 
 
 

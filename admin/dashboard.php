@@ -59,7 +59,7 @@ if(isset($_COOKIE['admin_id'])){
       ?>
       <h3><?= $count_listings; ?></h3>
       <p>Venue posted</p>
-      <a href="listings.php" class="btn">View listings</a>
+      <a href="events.php" class="btn">View listings</a>
    </div>
 
    <div class="box">

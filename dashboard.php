@@ -54,8 +54,8 @@ if(isset($_COOKIE['user_id'])){
         $total_properties = $count_properties->rowCount();
       ?>
       <h3><?= $total_properties; ?></h3>
-      <p>Properties listed</p>
-      <a href="my_listings.php" class="btn">view all Venues</a>
+      <p>Venues listed</p>
+      <a href="events.php" class="btn">View all Venues</a>
       </div>
 
       <div class="box">

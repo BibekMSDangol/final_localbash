@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) {
          </div>
          <div class="wrap1" id="form">
             <label>Email:</label>
-            <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+            <input type="email" name="email" required maxlength="50" placeholder="Enter your email" class="box">
             <span class="focus-input"></span>
          </div>
          <div class="wrap1" id="form">

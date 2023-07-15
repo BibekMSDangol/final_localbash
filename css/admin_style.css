@@ -116,11 +116,13 @@ section{
 }
 
 .btn{
-   background-color: var(--main-color);
+   background-color: var(--red);
+   border-radius: 10px;
 }
 
 .option-btn{
-   background-color: var(--orange);
+   background-color: rgb(8, 177, 8);
+   border-radius: 10px;
 }
 
 .delete-btn{
